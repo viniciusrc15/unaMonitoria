@@ -46,7 +46,7 @@
 	    <span class="mdl-layout-title"><a href="index.html"><img src="assets/pics/logo.png" alt="" width="100%" height="100%"></a></span>
 	    <!-- LOGO -->
 	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="entrar.html">Entrar</a>
+	      <a class="mdl-navigation__link" href="#" id="show-dialog">Entrar</a>
 	      <a class="mdl-navigation__link" href="sobre.html">Sobre</a>
 	      <a class="mdl-navigation__link" href="ajuda.html">Ajuda</a>
 	      <a class="mdl-navigation__link" href="versao.html">Versão 1.1.0</a>	      
@@ -55,6 +55,33 @@
 
 	  <!-- MAIN -->
 	  <main class="mdl-layout__content">
+	  	<dialog class="mdl-dialog">
+				<h6 class="mdl-dialog__title">Login</h6>
+				<div class="mdl-dialog__content">
+					<form action="#" id="form_logar" method="POST">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Digite seu usuário</label>
+						</div>
+
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="password" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Digite sua senha</label>
+						</div>
+					</form>
+
+					<p id="tt1"><b>Dica</b></p>
+					<p for="tt1" class="mdl-tooltip"><b>Usuário:</b> (código administrativo)
+						<b>Senha: </b>CPF
+					</p>
+					<a href="#">Preciso de ajuda</a>
+					
+				</div>
+				<div class="mdl-dialog__actions">
+					<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" form="form_logar">Acessar</button>
+					<button type="button" class="mdl-button close">Fechar</button>
+				</div>
+			</dialog>
 	  	<!-- CONTENT -->
 	    <div class="page-content">
 
@@ -236,6 +263,18 @@
 	</div>
 	<!-- MDL LAYOUT -->	
 
-
+<script>
+	var dialog = document.querySelector('dialog');
+	var showDialogButton = document.querySelector('#show-dialog');
+	if (! dialog.showModal) {
+		dialogPolyfill.registerDialog(dialog);
+	}
+	showDialogButton.addEventListener('click', function() {
+		dialog.showModal();
+	});
+	dialog.querySelector('.close').addEventListener('click', function() {
+		dialog.close();
+	});
+</script>
 </body>
 </html>
