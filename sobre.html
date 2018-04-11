@@ -46,68 +46,73 @@
 	    <span class="mdl-layout-title"><a href="index.html"><img src="assets/pics/logo.png" alt="" width="100%" height="100%"></a></span>
 	    <!-- LOGO -->
 	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="#" id="show-dialog">Entrar</a>
-	      <a class="mdl-navigation__link" href="sobre.html">Sobre</a>
-	      <a class="mdl-navigation__link" href="ajuda.html">Ajuda</a>
-	      <a class="mdl-navigation__link" href="versao.html">Versão 1.1.0</a>	      
+	      <a class="mdl-navigation__link" href="#" id="show-dialog"><i class="material-icons">person_pin</i> Entrar</a>
+	      <a class="mdl-navigation__link" href="sobre.html"><i class="material-icons">info_outline</i> <b>Sobre</b></a>
+	      <a class="mdl-navigation__link" href="ajuda.html"><i class="material-icons">help</i> Ajuda</a>
+	      <a class="mdl-navigation__link" href="versao.html"><i class="material-icons">history</i> Versão 1.1.0</a> 	      
 	    </nav>
 	  </div>
 
 	  <!-- MAIN -->
 	  <main class="mdl-layout__content">
-	  	<dialog class="mdl-dialog">
-				<h6 class="mdl-dialog__title">Login</h6>
-				<div class="mdl-dialog__content">
-					<form action="#" id="form_logar" method="POST">
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="sample3">
-							<label class="mdl-textfield__label" for="sample3">Digite seu usuário</label>
-						</div>
+		<dialog class="mdl-dialog">
+	  		<h6 class="mdl-dialog__title">Login</h6>
+	  		<div class="mdl-dialog__content">
+	  			<form action="mtr-adm/monitoria.html" id="form_logar" method="POST">
+	  				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  					<input class="mdl-textfield__input" type="text" id="sample3">
+	  					<label class="mdl-textfield__label" for="sample3">Digite seu usuário</label>
+	  				</div>
 
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="password" id="sample3">
-							<label class="mdl-textfield__label" for="sample3">Digite sua senha</label>
-						</div>
-					</form>
-
-					<p id="tt1"><b>Dica</b></p>
-					<p for="tt1" class="mdl-tooltip"><b>Usuário:</b> (código administrativo)
-						<b>Senha: </b>CPF
-					</p>
-					<a href="#">Preciso de ajuda</a>
-					
-				</div>
-				<div class="mdl-dialog__actions">
-					<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" form="form_logar">Acessar</button>
-					<button type="button" class="mdl-button close">Fechar</button>
-				</div>
-			</dialog>
+	  				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  					<input class="mdl-textfield__input" type="password" id="sample3">
+	  					<label class="mdl-textfield__label" for="sample3">Digite sua senha</label>
+	  				</div>
+	  			</form>
+	  			<span id="tt1" class="">
+				    <span class="mdl-chip__text"><i class="material-icons">info</i></span>
+				</span>
+	  			<p for="tt1" class="mdl-tooltip">
+	  				Seu usuário é sua matrícula. 				
+	  			</p>
+	  			<a href=""> Esqueci minha senha!</a>
+	  		</div>
+	  		<div class="mdl-dialog__actions">
+	  			<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" form="form_logar">Acessar</button>
+	  			<button type="button" class="mdl-button close">Fechar</button>
+	  		</div>
+	  	</dialog>
 	  	<!-- CONTENT -->
 	    <div class="page-content">
 
 			<!-- MDL GRID -->
 			<div class="mdl-grid">
-			  <!-- MDL CELL COL -->	
-			  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone texto-justificado">
 
+			</div>
+			<!-- MDL GRID -->
+
+			<div class="mdl-grid">
+			  
+
+			 <!-- MDL CELL COL -->	
+			  <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone texto-justificado">
 			  <!-- CARD -->
 			  	<div class="mdl-card mdl-shadow--2dp card-monitoria">
 				  <div class="mdl-card__title mdl-card--expand">
 				    <h2 class="mdl-card__title-text">Monitoria UNA</h2>
 				  </div>
 				  <div class="mdl-card__supporting-text">
-					<h5>Trata-se da ideia de desenvolver um WebApp que auxilie os alunos do Centro Universitário UNA a pesquisarem monitorias específicas relacionadas às matérias que estejam cursando atualmente. O aluno poderá filtrar na ferramenta, os monitores disponíveis nos horários pré-determinados e pesquisar pela matéria em questão.
+					<h5>WebApp desenvolvido para auxiliar os alunos do Centro Universitário UNA a pesquisarem monitorias específicas relacionadas às matérias que estejam cursando atualmente. 
 					<br/><br/>
-					Sendo assim, nossa solução visa incentivar o estudo, promover maneiras fáceis de acesso a informação compartilhada e facilitar a resolução das dúvidas do aluno ao longo do semestre. Através disso minimiza o percentual de reprovações e instaurar uma participação mais efetiva do aluno às propostas elaboradas para o desenvolvimento acadêmico do mesmo.
+					Sistemas de Informação - 4° semestre, 2018.
+					<br/><br/>
+					<a href="assets/files/doctec.pdf">Documentação técnica</a>
 					</h5>
 				  </div>
 				</div>
 			  </div>
 			  <!-- MDL CELL COL -->
-			</div>
-			<!-- MDL GRID -->
 
-			<div class="mdl-grid">
 			  <!-- MDL CELL COL -->	
 			  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">			  	
 			  	<!-- CARD -->
@@ -233,6 +238,26 @@
 				  </div>
 				</div>
 				<!-- CARD -->
+			  </div>
+			  <!-- MDL CELL COL -->
+
+
+<!-- MDL CELL COL -->	
+			  <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone texto-justificado">
+			  <!-- CARD -->
+			  	<div class="mdl-card mdl-shadow--2dp card-monitoria">
+				  <div class="mdl-card__title mdl-card--expand">
+				    <h2 class="mdl-card__title-text">Referências</h2>
+				  </div>
+				  <div class="mdl-card__supporting-text">
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe, odit deleniti quisquam sit, libero sed. Consequuntur, quod! Accusamus nam soluta beatae impedit praesentium provident porro. Quo, aut alias eius. 
+					<br/><br/>
+					
+					<br/><br/>
+					<a href="assets/files/doctec.pdf">Documentação técnica</a>
+					</h5>
+				  </div>
+				</div>
 			  </div>
 			  <!-- MDL CELL COL -->
 
